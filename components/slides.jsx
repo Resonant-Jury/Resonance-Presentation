@@ -289,13 +289,13 @@ function Slide04WhyNow() {
             </h3>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 20 }}>
               {[
-                '人們為了按讚而表演',
-                '為了曝光而焦慮',
-                '為了演算法而扭曲自己',
-              ].map((t, i) => (
-                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 16, fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.5 }}>
-                  <span style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-heading)', fontWeight: 700, marginTop: -2 }}>—</span>
-                  <span>{t}</span>
+                { k: '按讚', v: '人們為了它而表演' },
+                { k: '曝光', v: '人們為了它而焦慮' },
+                { k: '演算法', v: '人們為了它而扭曲自己' },
+              ].map((it, i) => (
+                <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.55, textWrap: 'pretty' }}>
+                  <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--color-text)', marginRight: 12, letterSpacing: '0.02em' }}>{it.k}</span>
+                  <span>{it.v}</span>
                 </li>
               ))}
             </ul>
@@ -697,10 +697,10 @@ function Slide09WhoWeServe() {
           highlight="有感，說不出口"
         />
 
-        <div style={{ marginTop: 56, display: 'grid', gridTemplateColumns: 'auto 1fr', gap: 56, alignItems: 'stretch', flex: 1 }}>
+        <div style={{ marginTop: 56, display: 'grid', gridTemplateColumns: 'auto 1fr', gap: 56, alignItems: 'center', flex: 1 }}>
           {/* Persona card */}
           <HandDrawnCard seed={211} fill="var(--color-cream)" stroke="oklch(40% 0.06 60)" padding={48} style={{ width: 520 }}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 24, height: '100%' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
               <HandDrawnAvatar initials="？" size={92} color="var(--color-terracotta-light)" seed={7} />
               <div>
                 <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-text-muted)', fontWeight: 600, marginBottom: 8 }}>
@@ -935,9 +935,9 @@ function Slide11HowToWin() {
           highlight="設計哲學"
         />
 
-        <div style={{ marginTop: 64, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 36, flex: 1, alignItems: 'end', alignContent: 'end' }}>
+        <div style={{ marginTop: 64, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 36, flex: 1, alignItems: 'stretch', alignContent: 'end' }}>
           {weapons.map(w => (
-            <HandDrawnCard key={w.n} seed={w.seed} fill={w.color} stroke={w.stroke} padding={40}>
+            <HandDrawnCard key={w.n} seed={w.seed} fill={w.color} stroke={w.stroke} padding={40} style={{ height: '100%' }}>
               <div style={{ display: 'flex', flexDirection: 'column', height: '100%', gap: 24 }}>
                 <div style={{ fontFamily: 'var(--font-heading)', fontSize: 96, fontWeight: 800, color: 'var(--color-text)', opacity: 0.85, lineHeight: 0.9, letterSpacing: '-0.03em' }}>
                   {w.n}
