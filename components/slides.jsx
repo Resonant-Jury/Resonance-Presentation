@@ -327,9 +327,9 @@ function Slide05Versus() {
   const rows = [
     { old: '追逐流量', nw: '追逐共鳴' },
     { old: '演算法餵養', nw: '同頻連結' },
-    { old: '創作者 vs. 讀者', nw: '人人都是思想家' },
-    { old: 'Follower 數字', nw: 'N 個人與你共振' },
-    { old: '表演與曝光', nw: '被真正聽見' },
+    { old: '故事與體悟的記錄', nw: '被真正聽見' },
+    { old: '雙向互動', nw: '人人都是思想家' },
+    { old: '真實故事連結', nw: 'N 個人與你共振' },
   ];
   return (
     <SlideFrame background="var(--color-cream-dark)" grain={0.05}
