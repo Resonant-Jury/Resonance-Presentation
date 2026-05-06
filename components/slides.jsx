@@ -431,7 +431,7 @@ function Slide06Product() {
           </h2>
 
           <div style={{ marginTop: 80, fontFamily: 'var(--font-heading)', fontSize: 38, fontWeight: 700, color: 'var(--color-text)', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
-            一張卡片 = 一個轉折瞬間 + 一個核心洞見
+            一張卡片 = 一個真實故事 + 一個核心體悟
           </div>
 
           <div style={{ margin: '48px 0 0', display: 'flex', flexDirection: 'column' }}>
@@ -684,7 +684,7 @@ function Slide08Team() {
 function Slide09WhoWeServe() {
   const signals = [
     'Notion / 日記 App 的重度使用者，但從來不發出去',
-    '在 Podcast 留言區寫過長評，卻沒有自己的頻道',
+    '聽完 Podcast，總會記下一些想法，也想找到同樣感受的人',
     '讀書會裡發言最有深度、但平時最不常說話的那種人',
     '想過寫部落格，最後因為「我沒資格」或「太麻煩」而作罷',
   ];
