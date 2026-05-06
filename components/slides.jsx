@@ -527,7 +527,7 @@ function Slide07WhyUs() {
       images: ['images/project-tuckin-1.webp', 'images/project-tuckin-2.webp'],
       bullets: [
         '上線後吸引 200 位同學註冊',
-        '第一次聚餐就形成 6 組同學，共 30 人參加',
+        '第一次活動有 6 組同學，共 30 人參加',
       ],
       fill: 'oklch(86% 0.065 140)',
       stroke: 'oklch(40% 0.10 145)',
@@ -587,7 +587,7 @@ function Slide07WhyUs() {
           title="我們走過的路"
         />
 
-        <div style={{ marginTop: 44, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 28, flex: 1, minHeight: 0 }}>
+        <div style={{ marginTop: 80, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 28, flex: 1, minHeight: 0 }}>
           {stages.map((stage, i) => (
             <HandDrawnCard key={i} seed={31 + i * 17} fill={stage.fill} stroke={stage.stroke} padding={36} style={{ display: 'flex', flexDirection: 'column' }}>
               <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.eyebrow, fontWeight: 700, color: stage.stroke, letterSpacing: '0.12em', marginBottom: 12 }}>
@@ -838,7 +838,7 @@ function Slide10Battlefield() {
           title="困難與產品創新"
         />
 
-        <div style={{ marginTop: 64, display: 'grid', gridTemplateColumns: '1fr 20px 1.15fr', columnGap: 32, alignItems: 'start' }}>
+        <div style={{ marginTop: 154, display: 'grid', gridTemplateColumns: '1fr 20px 1.15fr', columnGap: 32, alignItems: 'start' }}>
           {/* 起始點 — where we begin */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
             <Eyebrow color="var(--color-text-muted)">戰場 · 選擇的場域</Eyebrow>
@@ -935,10 +935,10 @@ function Slide11HowToWin() {
           highlight="設計哲學"
         />
 
-        <div style={{ marginTop: 64, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 36, flex: 1 }}>
+        <div style={{ marginTop: 64, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 36, flex: 1, alignItems: 'end', alignContent: 'end' }}>
           {weapons.map(w => (
             <HandDrawnCard key={w.n} seed={w.seed} fill={w.color} stroke={w.stroke} padding={40}>
-              <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 440, gap: 24 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', height: '100%', gap: 24 }}>
                 <div style={{ fontFamily: 'var(--font-heading)', fontSize: 96, fontWeight: 800, color: 'var(--color-text)', opacity: 0.85, lineHeight: 0.9, letterSpacing: '-0.03em' }}>
                   {w.n}
                 </div>
@@ -961,7 +961,7 @@ function Slide11HowToWin() {
 // ═══════════════════════════════════════════════════════════════════════════
 function Slide12BusinessModel() {
   const freeItems = [
-    { label: '撰寫文章', desc: '不受限地記錄你的想法、洞見與故事' },
+    { label: '撰寫文章', desc: '不受限地記錄你的想法、體悟與故事' },
     { label: '分享內容', desc: '讓你的文章在社群中自由流通，讓同頻的人找到你' },
     { label: '閱讀他人作品', desc: '所有內容完全對所有人開放，思想的流通不設牆' },
   ];
@@ -1088,7 +1088,7 @@ function Slide13Budget() {
           subtitle="打造 MLP 並驗證產品市場"
         />
 
-        <div style={{ marginTop: 28, flex: 1, display: 'flex', gap: 40, alignItems: 'stretch' }}>
+        <div style={{ marginTop: 70, flex: 1, display: 'flex', gap: 40, alignItems: 'stretch', justifyContent: 'space-between' }}>
           {/* Left: bar chart */}
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-around', paddingRight: 65 }}>
             {items.map((item, i) => (
@@ -1209,7 +1209,7 @@ function Slide14Timeline() {
         />
 
         {/* Timeline SVG */}
-        <div style={{ marginTop: 36, width: '100%' }}>
+        <div style={{ marginTop: 180, width: '100%' }}>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto', overflow: 'visible' }}>
             {/* Background track */}
             <line
@@ -1280,7 +1280,7 @@ function Slide14Timeline() {
         </div>
 
         {/* Phase cards */}
-        <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 22, flex: 1, minHeight: 0 }}>
+        <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 22, flex: 1, minHeight: 0, maxHeight: 300 }}>
           {phases.map((phase, i) => (
             <HandDrawnCard key={i} seed={301 + i * 13} fill={phase.color} stroke={phase.stroke} padding={30}>
               <div style={{ display: 'flex', flexDirection: 'column', height: '100%', gap: 14 }}>
