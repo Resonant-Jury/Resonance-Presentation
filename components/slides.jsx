@@ -138,14 +138,14 @@ function Slide02Thesis() {
           {[
             {
               anchor: '歸屬',
-              text: '有人說出了你心裡一直有、卻說不清楚的話──那一刻你知道，這個世界上有人和你同頻。你並不孤單。',
+              text: '當你的故事讓另一個人共振，你的想法終於被真正看見──那一刻你知道，這個世界上有人和你同頻。',
               fill: 'var(--color-terracotta-light)',
               textColor: 'oklch(35% 0.17 45)',
               seed: 13,
             },
             {
               anchor: '渴望',
-              text: '當你的故事讓另一個人共振，你的想法終於被真正看見──不是為了追蹤數，而是為了真實的連結。',
+              text: '有人說出了你心裡一直有、說不清楚的體悟，我們重新看見那些被忽略的自己，變得更完整而立體。',
               fill: 'var(--color-lavender)',
               textColor: 'oklch(38% 0.1 290)',
               seed: 29,
@@ -197,7 +197,7 @@ function Slide03Beliefs() {
     {
       tag: '體悟',
       label: '故事，始於轉折',
-      textNode: <>觸動人心的故事往往有起伏、有轉折，而主角產生了改變。我們發現專注於<Highlight color="oklch(36% 0.13 60)">轉折後的體悟</Highlight>，而非奮鬥史，更能觸動人心。</>,
+      textNode: <>觸動人心的故事往往有起伏、有轉折，而主角產生了改變。而我們發現專注於<Highlight color="oklch(36% 0.13 60)">轉折後的體悟</Highlight>，既能避免流於庸俗，又能容納每一個人。</>,
       color: 'var(--color-yellow)',
       seed: 29,
     },
