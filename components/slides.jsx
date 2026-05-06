@@ -189,20 +189,23 @@ function Slide03Beliefs() {
   const beliefs = [
     {
       tag: '立體',
-      textNode: <>人，生而立體。每個人都是獨一無二的立體存在，擁有自己的哲學與體悟。我們相信：<Highlight color="oklch(35% 0.17 45)">每個獨特的點，都是通往世界的線</Highlight>。</>,
+      textNode: <>人，生而立體。面對不同的人事物，我們展現出不同的面向，每個人都是<Highlight color="oklch(42% 0.11 45)">這些面構築成的一個立體存在，擁有自己的哲學與體悟。</Highlight></>,
       color: 'var(--color-terracotta-light)',
+      imageSrc: 'assets/03 立體 t.png',
       seed: 13,
     },
     {
       tag: '體悟',
-      textNode: <>故事，因體悟而深刻，我們發現專注於<Highlight color="oklch(36% 0.13 60)">故事中的體悟</Highlight>，既能避免流於庸俗，又能容納每一個人。</>,
+      textNode: <>故事，因體悟而深刻，我們發現專注於<Highlight color="oklch(44% 0.12 90)">故事中的體悟</Highlight>，既能避免流於庸俗，又能容納每一個人。有些想法我們有過，卻沒說清楚；有些體悟成了自己的核心，卻覺得無人共鳴。</>,
       color: 'var(--color-yellow)',
+      imageSrc: 'assets/03 體悟 t.png',
       seed: 29,
     },
     {
       tag: '共振',
-      textNode: <>有些想法我們有過，卻沒說清楚；有些體悟成了自己的核心，卻覺得無人共鳴。當有人將我們<Highlight color="oklch(34% 0.11 150)">心中未竟的想法說出口</Highlight>，那一刻即是共振發生的時刻。</>,
+      textNode: <>當有人將我們心中未竟的想法說出口 那一刻即是共振發生的時刻。我們相信：<Highlight color="oklch(40% 0.11 145)">每個獨特的點，都是通往世界的線</Highlight>。</>,
       color: 'var(--color-sage)',
+      imageSrc: 'assets/03 共振 t.png',
       seed: 47,
     },
   ];
@@ -215,10 +218,22 @@ function Slide03Beliefs() {
           highlight="深信不疑"
           subtitle="這是我們對人、對故事、對連結最深層的理解，也是共振存在的理由。"
         />
-        <div style={{ marginTop: 100, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40, flex: 1, alignContent: 'start', alignItems: 'start' }}>
+        <div style={{ marginTop: 100, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40, flex: 1, alignContent: 'start', alignItems: 'stretch' }}>
           {beliefs.map((b, i) => (
-            <HandDrawnCard key={i} seed={b.seed} fill={b.color} stroke="oklch(36% 0.06 60 / 0.6)" padding={40}>
-              <div style={{ display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'flex-start', gap: 40, minHeight: 40 }}>
+            <HandDrawnCard key={i} seed={b.seed} fill={b.color} stroke="oklch(36% 0.06 60 / 0.6)" padding={40} style={{ height: '100%' }}>
+              <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'flex-start', gap: 40, minHeight: 40 }}>
+                <img
+                  src={b.imageSrc}
+                  alt={b.tag}
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    right: 0,
+                    width: 100,
+                    height: 100,
+                    objectFit: 'contain',
+                  }}
+                />
                 <div style={{ fontFamily: 'var(--font-heading)', fontSize: 80, fontWeight: 800, lineHeight: 0.9, color: 'var(--color-text)', opacity: 0.92 }}>
                   {b.tag}
                 </div>
