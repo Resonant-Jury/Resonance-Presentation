@@ -580,10 +580,10 @@ function Slide07WhyUs() {
 
   return (
     <SlideFrame background="var(--color-cream)" grain={0.05}
-      chrome={<><BrandMark /><SlideNumber n={7} total={TOTAL_SLIDES} /></>}>
+      chrome={<><BrandMark /><SlideNumber n={8} total={TOTAL_SLIDES} /></>}>
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
         <SectionTitle
-          eyebrow="第五章 · 為何非得是我們"
+          eyebrow="第六章 · 為何非得是我們"
           title="我們走過的路"
         />
 
@@ -633,7 +633,7 @@ function Slide08Team() {
 
   return (
     <SlideFrame background="var(--color-cream)" grain={0.05}
-      chrome={<><BrandMark /><SlideNumber n={8} total={TOTAL_SLIDES} /></>}
+      chrome={<><BrandMark /><SlideNumber n={7} total={TOTAL_SLIDES} /></>}
       decor={
         <div style={{ position: 'absolute', bottom: '-10%', right: '-6%', opacity: 0.18, pointerEvents: 'none' }}>
           <OrganiBlob variant={1} fill="var(--color-terracotta-light)" size={560} />
@@ -642,7 +642,7 @@ function Slide08Team() {
     >
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%', paddingBottom: 80 }}>
         <SectionTitle
-          eyebrow="第六章 · 團隊"
+          eyebrow="第五章 · 團隊"
           title="頻審團"
           subtitle={
             <>
