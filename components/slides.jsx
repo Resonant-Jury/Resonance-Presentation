@@ -348,7 +348,7 @@ function Slide05Versus() {
           title="傳統平台 vs. 共振"
         />
 
-        <div style={{ marginTop: 60, display: 'grid', gridTemplateColumns: '580px auto 580px', gap: 48, alignItems: 'stretch', justifyContent: 'center', flex: 1 }}>
+        <div style={{ marginTop: 60, display: 'grid', gridTemplateColumns: '660px auto 660px', gap: 48, alignItems: 'stretch', justifyContent: 'center', flex: 1 }}>
           {/* Left: traditional */}
           <HandDrawnCard seed={19} fill="oklch(92% 0.01 75)" stroke="oklch(45% 0.03 70)" padding={44}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20, height: '100%' }}>
