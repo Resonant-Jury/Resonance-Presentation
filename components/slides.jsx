@@ -358,13 +358,14 @@ function Slide05Versus() {
               <div style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '-0.02em', lineHeight: 1.15, textDecoration: 'line-through', textDecorationColor: 'oklch(55% 0.04 70 / 0.55)' }}>
                 Medium · Threads
               </div>
-              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 14, marginTop: 8 }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: '8px 0 0', display: 'flex', flexDirection: 'column', gap: 14 }}>
                 {rows.map((r, i) => (
-                  <div key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text-muted)', lineHeight: 1.35 }}>
-                    {r.old}
-                  </div>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                    <span style={{ color: 'oklch(45% 0.03 70)', fontWeight: 700, flexShrink: 0, fontSize: TYPE_SCALE.bodySm, lineHeight: 1.35 }}>✦</span>
+                    <span style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text-muted)', lineHeight: 1.35 }}>{r.old}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </HandDrawnCard>
 
@@ -388,13 +389,14 @@ function Slide05Versus() {
               <div style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
                 Resonance
               </div>
-              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 14, marginTop: 8 }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: '8px 0 0', display: 'flex', flexDirection: 'column', gap: 14 }}>
                 {rows.map((r, i) => (
-                  <div key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.35, fontWeight: 500 }}>
-                    {r.nw}
-                  </div>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                    <span style={{ color: 'oklch(36% 0.13 45)', fontWeight: 700, flexShrink: 0, fontSize: TYPE_SCALE.bodySm, lineHeight: 1.35 }}>✦</span>
+                    <span style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.35, fontWeight: 500 }}>{r.nw}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </HandDrawnCard>
         </div>
@@ -604,7 +606,7 @@ function Slide07WhyUs() {
                 <ul style={{ listStyle: 'none', padding: 0, margin: '14px 0 0', display: 'flex', flexDirection: 'column', gap: 8 }}>
                   {stage.bullets.map((b, j) => (
                     <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                      <span style={{ color: stage.stroke, fontWeight: 700, flexShrink: 0, marginTop: 1 }}>✦</span>
+                      <span style={{ color: stage.stroke, fontWeight: 700, flexShrink: 0, fontSize: TYPE_SCALE.small, lineHeight: 1.45 }}>✦</span>
                       <span style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, color: 'var(--color-text)', lineHeight: 1.45 }}>{b}</span>
                     </li>
                   ))}
