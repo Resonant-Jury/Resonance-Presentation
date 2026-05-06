@@ -310,9 +310,18 @@ function Slide04WhyNow() {
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 800, margin: '0 0 28px', lineHeight: 1.15, letterSpacing: '-0.02em' }}>
                 共振放大的，是體悟
               </h3>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, lineHeight: 1.55, margin: 0, color: 'oklch(96% 0.015 75 / 0.92)', textWrap: 'pretty' }}>
-                第一次，我們能透過 AI 對每篇故事<Highlight color="oklch(92% 0.12 88)">取樣、建構詞向量</Highlight>──根據<Highlight color="oklch(92% 0.12 88)">你的現況、你分享的文章、你記下的想法卡片</Highlight>，推薦真正能引發共鳴的<Highlight color="oklch(92% 0.12 88)">體悟</Highlight>。
-              </p>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 18 }}>
+                {[
+                  { k: '提取', v: '透過 AI 對每篇故事取樣、建構專屬詞向量。' },
+                  { k: '感知', v: '結合你的真實狀態、分享內容與想法卡片。' },
+                  { k: '共振', v: '為你精準配對並推薦，產生真正的內心共鳴。' },
+                ].map((it, i) => (
+                  <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, lineHeight: 1.55, color: 'oklch(96% 0.015 75 / 0.92)', textWrap: 'pretty' }}>
+                    <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'oklch(92% 0.12 88)', marginRight: 12, letterSpacing: '0.02em' }}>{it.k}</span>
+                    <span>{it.v}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </HandDrawnCard>
         </div>
