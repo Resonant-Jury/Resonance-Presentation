@@ -218,10 +218,10 @@ function Slide03Beliefs() {
           highlight="深信不疑"
           subtitle="這是我們對人、對故事、對連結最深層的理解，也是共振存在的理由"
         />
-        <div style={{ marginTop: 100, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40, flex: 1, alignContent: 'start', alignItems: 'stretch' }}>
+        <div style={{ marginTop: 100, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40, flex: 1, alignContent: 'end', alignItems: 'stretch' }}>
           {beliefs.map((b, i) => (
             <HandDrawnCard key={i} seed={b.seed} fill={b.color} stroke="oklch(36% 0.06 60 / 0.6)" padding={40} style={{ height: '100%' }}>
-              <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'flex-start', gap: 40, minHeight: 40 }}>
+              <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'flex-end', gap: 40, minHeight: 40 }}>
                 <img
                   src={b.imageSrc}
                   alt={b.tag}
@@ -887,7 +887,7 @@ function Slide10Battlefield() {
               </div>
               <div style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 800, color: 'var(--color-text)', lineHeight: 1.3, letterSpacing: '-0.01em' }}>
                 Doomscrolling 本身，<br />
-                <span style={{ color: 'var(--color-terracotta)' }}>以及讓人覺得「自己不夠格發聲」的世界。</span>
+                <span style={{ color: 'var(--color-terracotta)' }}>以及人們覺得「自己不夠格發聲」的想法。</span>
               </div>
             </HandDrawnCard>
           </div>
@@ -904,7 +904,7 @@ function Slide11HowToWin() {
     {
       n: '01',
       title: '有發心，以「體悟」為信號',
-      textNode: <>我們不讓演算法決定誰被看見。共振以「體悟」為核心──AI 對每篇故事進行取樣與詞向量建構，根據你的現況、你分享的文章、你記下的想法卡片，為你推薦最合適的故事。<Highlight color="oklch(35% 0.17 45)">有體悟、有轉折的故事，讓人感受到生命的熱情</Highlight>，而不是焦慮與比較之心。</>,
+      textNode: <>我們不讓流量決定誰被看見。共振以「體悟」為核心，根據你分享的文章、你記下的想法卡片，為你推薦最合適的故事。<Highlight color="oklch(35% 0.17 45)">真實、有體悟的故事，感染生命的熱情</Highlight>，且不會因產生比較心態而焦慮。</>,
       color: 'var(--color-terracotta-light)',
       stroke: 'oklch(38% 0.11 55)',
       seed: 41,
@@ -912,7 +912,7 @@ function Slide11HowToWin() {
     {
       n: '02',
       title: '讀寫完全平等，付費買工具不買特權',
-      textNode: <>沒有 Premium 文章牆，沒有付費才能讀到的思想。共振的付費功能只提供 AI 寫作工具，幫使用者整理與連結卡片、建構個人知識體系。<Highlight color="oklch(42% 0.09 290)">思想的流通，不應由錢包決定</Highlight>。</>,
+      textNode: <>沒有 Premium 文章牆，沒有付費才能讀到的思想。共振的付費功能只提供 AI 寫作工具，幫使用者整理與連結卡片、建構個人知識體系。<Highlight color="oklch(42% 0.09 290)">促進思想的流通，是正向影響世界的根本方法</Highlight>。</>,
       color: 'oklch(94% 0.032 290)',
       stroke: 'oklch(42% 0.09 290)',
       seed: 67,
@@ -920,7 +920,7 @@ function Slide11HowToWin() {
     {
       n: '03',
       title: '用故事交朋友，不做創作者粉絲制',
-      textNode: <>沒有追蹤數、沒有「創作者 vs 讀者」的上下階層。在共振，<Highlight color="oklch(34% 0.11 150)">每個人都是分享者，用自己的故事找到同頻的靈魂</Highlight>。雙向連結後才能看到彼此更多──交流像朋友，而非仰望。</>,
+      textNode: <>沒有追蹤數、沒有「創作者 vs 讀者」的上下階層。在共振，<Highlight color="oklch(34% 0.11 150)">分享是對等的雙向互動</Highlight> ── 交流像朋友，而非仰望。連結讓我們相遇，故事讓彼此共振。</>,
       color: 'oklch(93% 0.042 140)',
       stroke: 'oklch(38% 0.11 140)',
       seed: 97,
@@ -931,8 +931,8 @@ function Slide11HowToWin() {
       chrome={<><BrandMark /><SlideNumber n={11} total={TOTAL_SLIDES} /></>}><div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
         <SectionTitle
           eyebrow="第九章 · 如何贏"
-          title="三個產品哲學武器"
-          highlight="哲學武器"
+          title="三個產品設計哲學"
+          highlight="設計哲學"
         />
 
         <div style={{ marginTop: 64, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 36, flex: 1 }}>
