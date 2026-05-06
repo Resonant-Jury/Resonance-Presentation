@@ -974,6 +974,8 @@ function Slide12BusinessModel() {
       fill: 'var(--color-terracotta-light)',
       stroke: 'oklch(38% 0.11 55)',
       seed: 171,
+      img: 'assets/10 標籤.png',
+      imgHeight: 170,
     },
     {
       n: '02',
@@ -982,6 +984,8 @@ function Slide12BusinessModel() {
       fill: 'oklch(94% 0.032 290)',
       stroke: 'oklch(42% 0.09 290)',
       seed: 190,
+      img: 'assets/10 連結.png',
+      imgHeight: 150,
     },
   ];
 
@@ -1050,6 +1054,9 @@ function Slide12BusinessModel() {
                   <p style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.55, margin: 0, textWrap: 'pretty' }}>
                     {item.textNode}
                   </p>
+                  {item.img && (
+                    <img src={item.img} alt={item.title} style={{ height: item.imgHeight || 150, width: 'auto', maxWidth: '100%', objectFit: 'contain', marginTop: 'auto', alignSelf: 'center', display: 'block' }} />
+                  )}
                 </div>
               </HandDrawnCard>
             </div>
