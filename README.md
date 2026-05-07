@@ -5,7 +5,7 @@
 ## 🔗 線上檢視
 
 您可以直接透過以下網址瀏覽網頁版簡報：
-👉 **[https://ncchen99.github.io/Resonance-Presentation/](https://ncchen99.github.io/Resonance-Presentation/)**
+👉 **[https://resonant-jury.github.io/Resonance-Presentation/](https://resonant-jury.github.io/Resonance-Presentation/)**
 
 ## 📄 PDF 版本
 
