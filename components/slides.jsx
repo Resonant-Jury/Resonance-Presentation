@@ -278,52 +278,54 @@ function Slide04WhyNow() {
           highlight="有發心地"
         />
 
-        <div style={{ marginTop: 72, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, flex: 1 }}>
-          {/* Past decade */}
-          <div style={{ paddingTop: 52 }}>
-            <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-text-muted)', marginBottom: 24, fontWeight: 600 }}>
-              過去十年
-            </div>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 700, color: 'var(--color-text)', margin: '0 0 32px', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
-              中性平台被流量經濟異化
-            </h3>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 20 }}>
-              {[
-                { k: '按讚', v: '人們為了它而表演' },
-                { k: '曝光', v: '人們為了它而焦慮' },
-                { k: '演算法', v: '人們為了它而扭曲自己' },
-              ].map((it, i) => (
-                <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.55, textWrap: 'pretty' }}>
-                  <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--color-text)', marginRight: 12, letterSpacing: '0.02em' }}>{it.k}</span>
-                  <span>{it.v}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Now */}
-          <HandDrawnCard seed={73} fill="var(--color-terracotta)" stroke="oklch(30% 0.14 45)" padding={52}>
-            <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 440, color: 'var(--color-cream)' }}>
-              <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'oklch(96% 0.015 75 / 0.75)', marginBottom: 24, fontWeight: 600 }}>
-                此刻 · AI 時代
+        <div style={{ marginTop: 72, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+            {/* Past decade */}
+            <div style={{ paddingTop: 52 }}>
+              <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-text-muted)', marginBottom: 24, fontWeight: 600 }}>
+                過去十年
               </div>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 800, margin: '0 0 28px', lineHeight: 1.15, letterSpacing: '-0.02em' }}>
-                共振放大的，是體悟
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 700, color: 'var(--color-text)', margin: '0 0 32px', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
+                中性平台被流量經濟異化
               </h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 18 }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 20 }}>
                 {[
-                  { k: '提取', v: '透過 AI 對每篇故事取樣、建構專屬詞向量。' },
-                  { k: '感知', v: '結合你的真實狀態、分享內容與想法卡片。' },
-                  { k: '共振', v: '為你精準配對並推薦，產生真正的內心共鳴。' },
+                  { k: '按讚', v: '人們為了它而表演' },
+                  { k: '曝光', v: '人們為了它而焦慮' },
+                  { k: '演算法', v: '人們為了它而扭曲自己' },
                 ].map((it, i) => (
-                  <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, lineHeight: 1.55, color: 'oklch(96% 0.015 75 / 0.92)', textWrap: 'pretty' }}>
-                    <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'oklch(92% 0.12 88)', marginRight: 12, letterSpacing: '0.02em' }}>{it.k}</span>
+                  <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.55, textWrap: 'pretty' }}>
+                    <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--color-text)', marginRight: 12, letterSpacing: '0.02em' }}>{it.k}</span>
                     <span>{it.v}</span>
                   </li>
                 ))}
               </ul>
             </div>
-          </HandDrawnCard>
+
+            {/* Now */}
+            <HandDrawnCard seed={73} fill="var(--color-terracotta)" stroke="oklch(30% 0.14 45)" padding={52} style={{ marginTop: 36 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', height: '100%', color: 'var(--color-cream)' }}>
+                <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'oklch(96% 0.015 75 / 0.75)', marginBottom: 24, fontWeight: 600 }}>
+                  此刻 · AI 時代
+                </div>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 800, margin: '0 0 28px', lineHeight: 1.15, letterSpacing: '-0.02em' }}>
+                  共振放大的，是體悟
+                </h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 18 }}>
+                  {[
+                    { k: '提取', v: '透過 AI 對每篇故事取樣、建構專屬詞向量。' },
+                    { k: '感知', v: '結合你的真實狀態、分享內容與想法卡片。' },
+                    { k: '共振', v: '為你精準配對並推薦，產生真正的內心共鳴。' },
+                  ].map((it, i) => (
+                    <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, lineHeight: 1.55, color: 'oklch(96% 0.015 75 / 0.92)', textWrap: 'pretty' }}>
+                      <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'oklch(92% 0.12 88)', marginRight: 12, letterSpacing: '0.02em' }}>{it.k}</span>
+                      <span>{it.v}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </HandDrawnCard>
+          </div>
         </div>
       </div></SlideFrame>
   );
@@ -336,7 +338,7 @@ function Slide05Versus() {
   const rows = [
     { old: '追逐流量', nw: '看見那些被忽略的自己，並與世界連結' },
     { old: '演算法餵養', nw: '同頻共鳴' },
-    { old: '表演與曝光', nw: '故事與體悟的記錄' },
+    { old: '表演與曝光', nw: '故事與體悟的書寫' },
     { old: '創作者 vs. 讀者', nw: '對等的雙向互動' },
     { old: 'Follower 數字', nw: '真實故事連結' },
   ];
@@ -348,57 +350,59 @@ function Slide05Versus() {
           title="傳統平台 vs. 共振"
         />
 
-        <div style={{ marginTop: 60, display: 'grid', gridTemplateColumns: '660px auto 660px', gap: 48, alignItems: 'stretch', justifyContent: 'center', flex: 1 }}>
-          {/* Left: traditional */}
-          <HandDrawnCard seed={19} fill="oklch(92% 0.01 75)" stroke="oklch(45% 0.03 70)" padding={44}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 20, height: '100%' }}>
-              <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-text-muted)', fontWeight: 600 }}>
-                傳統社群與平台
+        <div style={{ marginTop: 60, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '660px auto 660px', gap: 48, alignItems: 'end', justifyContent: 'center' }}>
+            {/* Left: traditional */}
+            <HandDrawnCard seed={19} fill="oklch(92% 0.01 75)" stroke="oklch(45% 0.03 70)" padding={44}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 20, height: '100%' }}>
+                <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-text-muted)', fontWeight: 600 }}>
+                  傳統社群與平台
+                </div>
+                <div style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '-0.02em', lineHeight: 1.15, textDecoration: 'line-through', textDecorationColor: 'oklch(55% 0.04 70 / 0.55)' }}>
+                  Medium · Threads
+                </div>
+                <ul style={{ listStyle: 'none', padding: 0, margin: '8px 0 0', display: 'flex', flexDirection: 'column', gap: 14 }}>
+                  {rows.map((r, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                      <span style={{ color: 'oklch(45% 0.03 70)', fontWeight: 700, flexShrink: 0, fontSize: TYPE_SCALE.bodySm, lineHeight: 1.35 }}>✦</span>
+                      <span style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text-muted)', lineHeight: 1.35 }}>{r.old}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '-0.02em', lineHeight: 1.15, textDecoration: 'line-through', textDecorationColor: 'oklch(55% 0.04 70 / 0.55)' }}>
-                Medium · Threads
-              </div>
-              <ul style={{ listStyle: 'none', padding: 0, margin: '8px 0 0', display: 'flex', flexDirection: 'column', gap: 14 }}>
-                {rows.map((r, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                    <span style={{ color: 'oklch(45% 0.03 70)', fontWeight: 700, flexShrink: 0, fontSize: TYPE_SCALE.bodySm, lineHeight: 1.35 }}>✦</span>
-                    <span style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text-muted)', lineHeight: 1.35 }}>{r.old}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </HandDrawnCard>
+            </HandDrawnCard>
 
-          {/* Center: arrow */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
-            <svg width="180" height="60" viewBox="0 0 180 60" style={{ overflow: 'visible' }}>
-              <path d="M 10,30 C 50,22 130,38 170,30" stroke="var(--color-terracotta)" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.7" />
-              <path d="M 158,18 L 172,30 L 158,42" stroke="var(--color-terracotta)" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <span style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', fontSize: 26, color: 'var(--color-terracotta)' }}>
-              shift
-            </span>
+            {/* Center: arrow */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, alignSelf: 'center' }}>
+              <svg width="180" height="60" viewBox="0 0 180 60" style={{ overflow: 'visible' }}>
+                <path d="M 10,30 C 50,22 130,38 170,30" stroke="var(--color-terracotta)" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.7" />
+                <path d="M 158,18 L 172,30 L 158,42" stroke="var(--color-terracotta)" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', fontSize: 26, color: 'var(--color-terracotta)' }}>
+                shift
+              </span>
+            </div>
+
+            {/* Right: resonance */}
+            <HandDrawnCard seed={83} fill="var(--color-terracotta-light)" stroke="oklch(36% 0.13 45)" padding={44}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 20, height: '100%' }}>
+                <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-terracotta)', fontWeight: 700 }}>
+                  共振
+                </div>
+                <div style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
+                  Resonance
+                </div>
+                <ul style={{ listStyle: 'none', padding: 0, margin: '8px 0 0', display: 'flex', flexDirection: 'column', gap: 14 }}>
+                  {rows.map((r, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                      <span style={{ color: 'oklch(36% 0.13 45)', fontWeight: 700, flexShrink: 0, fontSize: TYPE_SCALE.bodySm, lineHeight: 1.35 }}>✦</span>
+                      <span style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.35, fontWeight: 500 }}>{r.nw}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </HandDrawnCard>
           </div>
-
-          {/* Right: resonance */}
-          <HandDrawnCard seed={83} fill="var(--color-terracotta-light)" stroke="oklch(36% 0.13 45)" padding={44}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 20, height: '100%' }}>
-              <div style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.small, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-terracotta)', fontWeight: 700 }}>
-                共振
-              </div>
-              <div style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
-                Resonance
-              </div>
-              <ul style={{ listStyle: 'none', padding: 0, margin: '8px 0 0', display: 'flex', flexDirection: 'column', gap: 14 }}>
-                {rows.map((r, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                    <span style={{ color: 'oklch(36% 0.13 45)', fontWeight: 700, flexShrink: 0, fontSize: TYPE_SCALE.bodySm, lineHeight: 1.35 }}>✦</span>
-                    <span style={{ fontFamily: 'var(--font-body)', fontSize: TYPE_SCALE.bodySm, color: 'var(--color-text)', lineHeight: 1.35, fontWeight: 500 }}>{r.nw}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </HandDrawnCard>
         </div>
       </div></SlideFrame>
   );
@@ -887,7 +891,7 @@ function Slide10Battlefield() {
               </div>
               <div style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 800, color: 'var(--color-text)', lineHeight: 1.3, letterSpacing: '-0.01em' }}>
                 Doomscrolling 本身，<br />
-                <span style={{ color: 'var(--color-terracotta)' }}>以及人們覺得「自己不夠格發聲」的想法。</span>
+                <span>以及人們覺得「自己不夠格發聲」的想法。</span>
               </div>
             </HandDrawnCard>
           </div>
